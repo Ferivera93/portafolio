@@ -237,24 +237,40 @@
                 contact-left
                 personal contact info
             -->
-            <div class="container">
-                <div class="row">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        <label for="exampleFormControlInput1" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Razón de Contacto</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
+            <form class="my-4 row g-3 p-4 text-dark">
+                <legend>Formulario de Contacto</legend>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                          <label for="user-name" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="user-name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="user-lastname" class="form-label">Apellido</label>
+                          <input type="text" class="form-control" id="user-lastname">
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="col-12">
+                    <div>
+                        <label for="user-email" class="form-label">Dirección de Correo</label>
+                        <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div>
+                      <label for="user-phone" class="form-label">Telefono de Contacto</label>
+                      <input type="number" class="form-control" id="user-phone">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div>
+                      <label for="user-inquire" class="form-label">Razón de Contacto</label>
+                      <input type="" class="form-control" id="user-inquire">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </section>
         <!-- <section class="section sec5 contact" id="contact">
 

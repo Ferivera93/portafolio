@@ -437,6 +437,13 @@ section {
     transform: scale(1);
 }
 
+/*////////// FORM //////////*/
+form {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    font-weight: 900;
+}
+
 /*////////// INDEPENDENT COMPONENTS //////////*/
 .btn-con {
     display: flex;
@@ -510,4 +517,13 @@ section {
     transform: translate(-50%, -50%);
     font-weight: 800;
     font-size: 6.3rem;
+}
+
+
+/*////////// MEDIAQUERIES //////////*/
+
+@media screen and (max-width: 600px) {
+    body {
+        display: none;
+    }
 }
