@@ -34,7 +34,7 @@
                     </a>
                 </div>
             </div>
-        </div>z
+        </div>
     </header>
 
     <main>
@@ -79,7 +79,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- test -->
                 <div class="bottom-jump"></div>
                 <div class="bottom-jump"></div>
                 <div class="bottom-about">
@@ -226,55 +225,58 @@
             </div>
         </section>
         <section class="section sec4 contact" id="contact">
-            
-            <!--2 col (contact-left |   contact-right)
-                contact-right
-                2 col (name         |   email)
-                1 col (subject)
-                1col big (text)
-                send button small
-                **apply regex to all**
-                contact-left
-                personal contact info
-            -->
-            <form class="my-4 row g-3 p-4 text-dark">
-                <legend>Formulario de Contacto</legend>
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-md-6">
-                          <label for="user-name" class="form-label">Nombre</label>
-                          <input type="text" class="form-control" id="user-name" aria-describedby="emailHelp">
+            <div class="container col">
+                <div class="row">
+                    <div class="col mb-3 main-title">
+                        <h2>Datos <span>Personales</span><span class="bg-text">Contacto</span></h2>
+                    </div>
+                    <form class="my-4 row g-3 p-4 col-12">
+                        <legend>Formulario de Contacto</legend>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                  <label for="user-name" class="form-label">Nombre</label>
+                                  <input type="text" class="form-control" id="user-name" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                  <label for="user-lastname" class="form-label">Apellido</label>
+                                  <input type="text" class="form-control" id="user-lastname" required>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                          <label for="user-lastname" class="form-label">Apellido</label>
-                          <input type="text" class="form-control" id="user-lastname">
+                        <div class="col-12">
+                            <div>
+                                <label for="user-email" class="form-label">Dirección de Correo</label>
+                                <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp" pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b" required>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div>
-                        <label for="user-email" class="form-label">Dirección de Correo</label>
-                        <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div>
-                      <label for="user-phone" class="form-label">Telefono de Contacto</label>
-                      <input type="number" class="form-control" id="user-phone">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div>
-                      <label for="user-inquire" class="form-label">Razón de Contacto</label>
-                      <input type="" class="form-control" id="user-inquire">
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-        </section>
-        <!-- <section class="section sec5 contact" id="contact">
+                        <div class="col-12">
+                            <div>
+                              <label for="user-phone" class="form-label">Telefono de Contacto</label>
+                              <input type="number" class="form-control" id="user-phone" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                              <label for="user-inquire" class="form-label">Razón de Contacto</label>
+                              <input type="" class="form-control" id="user-inquire" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
 
-        </section> -->
+                    <div class="row contact-info">
+                        <h2>Información <span>Personal</span></h2>
+                        <ul>
+                            <li>Nombre: <span>Felipe Rivera</span></li>
+                            <li>Correo: <span>felipe.rm64@gmail.com</span></li>
+                            <li>Celular: <span>123456789</span></li>
+                            <li>Ciudad: <span>Santiago, Chile</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
                     
     <div class="controls">
@@ -290,9 +292,6 @@
         <div class="control control-4" data-id="contact">
             <i class="fa-solid fa-envelope"></i>
         </div>
-        <!-- <div class="control control-5" data-id="contact">
-            <i class="fa-solid fa-envelope"></i>
-        </div> -->
     </div>
 
     <script src="./assets/js/main.js"></script>
